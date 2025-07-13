@@ -1,0 +1,509 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="Hvrdlpdul_wxTYLoKjoO_UzwQg7Y6nGtMx22FLFT5Ak" />
+    <title>Jasa SEO Ultimate: Menaikkan Peringkat Web di Halaman Google</title>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://jagoankita.my.id/" />
+    <meta property="og:locale" content="id" />
+    <meta property="og:image:width" content="720" />
+    <meta property="og:image:height" content="788" />
+    <meta property="og:image:type" content="image/png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='/img/logojagoankita.png' rel='icon' type='image/x-icon'/>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --bg-dark: #121828;
+            --bg-card: #1a2235;
+            --primary-accent: #00A9FF; /* Biru terang sebagai aksen */
+            --secondary-accent: #87C4FF;
+            --text-light: #E0F4FF;
+            --text-muted: #a0aec0;
+            --border-color: #2d3748;
+        }
+
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        h1 { font-size: 3rem; }
+        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
+        h2 span { color: var(--primary-accent); }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: var(--primary-accent);
+            color: var(--bg-dark);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, background-color 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: var(--secondary-accent);
+        }
+
+        /* Header */
+        .header {
+            background: rgba(18, 24, 40, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-decoration: none;
+        }
+        .logo span { color: var(--primary-accent); }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: var(--primary-accent);
+        }
+
+        /* Hero Section */
+        #hero {
+                        background: linear-gradient(rgba(6, 40, 85, 0.85), rgba(26, 115, 232, 0.85)), url('https://jagoankita.my.id/img/faq.jpg') no-repeat center center/cover;
+
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        #hero h1 {
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        #hero h1 span {
+            background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        /* Trust Section */
+        #trust .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .trust-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .trust-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-accent);
+        }
+
+        .trust-card .icon {
+            font-size: 2.5rem;
+            color: var(--primary-accent);
+            margin-bottom: 15px;
+        }
+        
+        .trust-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .trust-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Domain List Section */
+        #domains {
+            background-color: var(--bg-card);
+        }
+
+        .domain-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: var(--bg-dark);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .domain-table th, .domain-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .domain-table th {
+            background-color: #1a2235;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        
+        .domain-table td {
+            color: var(--text-muted);
+        }
+        
+        .domain-table td span.metric {
+            font-weight: 600;
+            color: var(--secondary-accent);
+        }
+        
+        .domain-name {
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* Pricing Section */
+        #pricing .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+
+        .price-card {
+            background: var(--bg-card);
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .price-card.popular {
+            transform: scale(1.05);
+            border: 2px solid var(--primary-accent);
+        }
+
+        .price-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-accent);
+        }
+        
+        .price-card .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        
+        .price-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        .price-card ul {
+            list-style: none;
+            margin: 25px 0;
+            text-align: left;
+        }
+        
+        .price-card ul li {
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+        
+        .price-card ul li i {
+            color: var(--secondary-accent);
+            margin-right: 10px;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            color: var(--text-muted);
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        }
+        
+        /* Final CTA */
+        #cta {
+            background: linear-gradient(45deg, var(--bg-card), #171f30);
+            text-align: center;
+            border-radius: 15px;
+            padding: 60px 30px;
+        }
+        #cta h2 { margin-bottom: 20px; }
+        #cta p {
+            max-width: 500px;
+            margin: 0 auto 30px;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 2rem; }
+            .nav-links { display: none; } /* Simplicity for demo */
+            #pricing .grid {
+                grid-template-columns: 1fr;
+            }
+            .price-card.popular { transform: scale(1); }
+        }
+        
+
+
+        
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="/" class="logo">Jagoan<span>Kita</span></a>
+            <nav class="nav-links">
+                <a href="/">Keunggulan</a>
+                <a href="/">Daftar Domain</a>
+                <a href="/">Harga</a>
+                <a href="/faq/">FAQ</a>
+            </nav>
+            <a href="/" class="btn">Mulai</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <ul></ul>
+                <a href="" class="btn">SEO premium</a>
+                <ul></ul>
+            </div>
+        </section>
+
+<div class="container">
+        <!-- Final CTA -->
+        <section id="cta" class="container">
+   <article>
+                <header>
+                    <h1>Jasa SEO Ultimate: Menaikkan Peringkat Web Anda ke Halaman Pertama Google</h1>
+                </header>
+
+                <section id="intro">
+                    <p>Di era digital yang sangat kompetitif, memiliki website saja tidak cukup. Bayangkan Anda memiliki toko megah di jalanan yang sepi. Itulah perumpamaan sebuah website tanpa visibilitas di mesin pencari. Jika pelanggan potensial tidak dapat menemukan Anda di Google, maka keberadaan online Anda menjadi sia-sia.</p>
+                    <p>Inilah mengapa Jasa SEO (Search Engine Optimization) menjadi sangat krusial. "Jasa SEO Ultimate" hadir sebagai solusi untuk mentransformasi website Anda dari sekadar ada, menjadi aset digital yang aktif mendatangkan prospek dan pelanggan.</p>
+                </section>
+
+                <section id="importance-of-page-one">
+                    <h2>Mengapa Halaman Pertama Google Adalah Segalanya?</h2>
+                    <p>Studi secara konsisten menunjukkan bahwa lebih dari 75% pengguna tidak pernah mengklik melewati halaman pertama hasil pencarian Google. Posisi teratas bukan lagi sekadar kebanggaan, melainkan sebuah keharusan bisnis. Berada di halaman pertama memberikan:</p>
+                    <ul>
+                        <li><strong>Kredibilitas dan Kepercayaan:</strong> Situs yang muncul di peringkat atas secara otomatis dianggap lebih relevan dan tepercaya oleh pengguna.</li>
+                        <li><strong>Lalu Lintas (Traffic) Berkualitas:</strong> Anda tidak hanya mendapatkan lebih banyak pengunjung, tetapi juga pengunjung yang secara aktif mencari produk atau layanan yang Anda tawarkan.</li>
+                        <li><strong>Peluang Prospek (Leads) yang Lebih Tinggi:</strong> Semakin banyak lalu lintas relevan, semakin besar peluang untuk mengubah pengunjung menjadi pelanggan.</li>
+                        <li><strong>Keunggulan Kompetitif:</strong> Dengan mengungguli pesaing di hasil pencarian, Anda secara efektif merebut pangsa pasar digital mereka.</li>
+                    </ul>
+                </section>
+
+                <section id="our-process">
+                    <h2>Proses Kerja "Jasa SEO Ultimate" Kami</h2>
+                    <p>Kami percaya bahwa SEO yang sukses bukanlah hasil dari trik sesaat, melainkan strategi jangka panjang yang terstruktur dan berbasis data. Berikut adalah pilar proses kerja kami:</p>
+                    
+                    <h3>1. Audit & Analisis Mendalam</h3>
+                    <p>Langkah pertama kami adalah memahami bisnis Anda, target pasar, dan kondisi website Anda saat ini. Kami melakukan audit komprehensif yang mencakup:</p>
+                    <ul>
+                        <li><strong>Analisis Kompetitor:</strong> Membedah strategi SEO yang digunakan oleh pesaing utama Anda.</li>
+                        <li><strong>Audit Teknis:</strong> Memeriksa kesehatan teknis situs, seperti kecepatan, struktur URL, dan keramahan seluler (mobile-friendliness).</li>
+                        <li><strong>Audit Konten:</strong> Mengevaluasi kualitas dan relevansi konten yang ada di website Anda.</li>
+                    </ul>
+
+                    <h3>2. Riset dan Strategi Kata Kunci (Keyword)</h3>
+                    <p>Kami tidak asal menargetkan kata kunci. Tim kami akan melakukan riset mendalam untuk menemukan kata kunci yang paling relevan, memiliki volume pencarian tinggi, dan sesuai dengan niat (intent) calon pelanggan Anda.</p>
+
+                    <h3>3. Optimasi On-Page</h3>
+                    <p>Ini adalah fondasi dari semua upaya SEO. Kami akan mengoptimalkan setiap elemen di dalam website Anda, termasuk:</p>
+                    <ul>
+                        <li>Optimalisasi Judul (Title Tags) dan Meta Deskripsi.</li>
+                        <li>Penyempurnaan struktur konten dan penggunaan heading (H1, H2, H3).</li>
+                        <li>Optimalisasi gambar (ukuran dan alt text).</li>
+                        <li>Peningkatan tautan internal (internal linking).</li>
+                    </ul>
+
+                    <h3>4. Optimasi Off-Page & Pembangunan Otoritas</h3>
+                    <p>Sebuah website perlu membangun reputasi di mata Google. Kami melakukannya melalui strategi Off-Page yang etis dan efektif, terutama melalui <em>link building</em> berkualitas. Kami akan mendapatkan tautan balik (backlink) dari situs-situs web yang relevan dan memiliki otoritas tinggi, yang secara signifikan akan meningkatkan kepercayaan Google terhadap situs Anda.</p>
+
+                    <h3>5. Pelaporan Transparan dan Evaluasi</h3>
+                    <p>Anda tidak akan pernah bertanya-tanya tentang apa yang kami kerjakan. Setiap bulan, kami akan menyediakan laporan terperinci yang menunjukkan kemajuan kinerja SEO Anda, termasuk peringkat kata kunci, pertumbuhan lalu lintas organik, dan metrik penting lainnya. Kami menggunakan data ini untuk terus menyempurnakan strategi demi hasil yang maksimal.</p>
+                </section>
+
+                <section id="why-us">
+                    <h2>Mengapa Memilih "Jasa SEO Ultimate"?</h2>
+                    <ul>
+                        <li><strong>Strategi Kustom:</strong> Kami tidak menggunakan pendekatan "satu untuk semua". Strategi SEO dirancang khusus untuk kebutuhan unik bisnis Anda.</li>
+                        <li><strong>Fokus pada ROI:</strong> Tujuan akhir kami adalah memberikan laba atas investasi (Return on Investment) yang nyata untuk bisnis Anda.</li>
+                        <li><strong>Teknik White-Hat:</strong> Kami hanya menggunakan praktik SEO yang etis dan sesuai dengan pedoman Google, memastikan keamanan jangka panjang untuk website Anda.</li>
+                        <li><strong>Tim Ahli:</strong> Tim kami terdiri dari para spesialis SEO yang berpengalaman dan selalu mengikuti perkembangan algoritma terbaru.</li>
+                    </ul>
+                </section>
+
+                <section class="cta-section">
+                    <h2>Siap Mendominasi Halaman Pertama Google?</h2>
+                    <p>Jangan biarkan kompetitor mengambil alih pelanggan potensial Anda. Saatnya mengubah website Anda menjadi mesin pemasaran paling kuat.</p>
+                    <p>Hubungi "Jasa SEO Ultimate" hari ini untuk mendapatkan <strong>konsultasi dan audit SEO gratis</strong>. Mari kita mulai perjalanan Anda menuju puncak hasil pencarian Google!</p>
+                    
+                </section>
+
+            </article>
+
+        </div>
+        </section>
+                
+
+
+
+    </main>
+<div style="position: fixed;bottom: 10px; right: 15px;z-index: 10;opacity: 0.98;">
+<a href="https://wa.me/6282275955901?text=Halo, saya ingin konsultasi  tentang Domain Berkualitas untuk Kebutuhan Backlink saya." target="_blank" rel="noopener">
+<img class="wabutton" src="/img/WhatsApp.webp" alt="Chat Sekarang" width="50" height="50">
+</a>
+</div>
+    <footer>
+        <div class="container">
+            <p>© 2025 JagoanKita. All rights reserved.</p>
+            <p><a href="#" style="color: var(--text-muted); margin: 0 10px;">Terms of Service</a> | <a href="#" style="color: var(--text-muted); margin: 0 10px;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+
+                // Tutup semua jawaban lain
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                        otherItem.querySelector('.faq-answer').style.padding = '0 20px';
+                        otherItem.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Buka/tutup jawaban yang diklik
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    answer.style.padding = '0 20px';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 40 + "px";
+                    answer.style.padding = '20px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
